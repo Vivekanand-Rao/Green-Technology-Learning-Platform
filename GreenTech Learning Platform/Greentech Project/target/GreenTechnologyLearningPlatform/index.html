@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLearn | Green Technology Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-banner {
+            padding: 80px 6%;
+            background: radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.18), transparent 45%), linear-gradient(135deg, #091a13 0%, #11261d 100%);
+            border-bottom: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        @media (max-width: 900px) {
+            .hero-banner { grid-template-columns: 1fr; padding: 50px 4%; }
+        }
+    </style>
+</head>
+<body>
+<header class="navbar">
+    <a class="brand" href="index.html">🌱 GreenLearn</a>
+    <nav>
+        <a href="index.html" style="color:var(--primary); font-weight:700;">Home</a>
+        <a href="courses">Courses</a>
+        <a href="community">Community</a>
+        <a href="login.jsp">Login</a>
+        <a class="btn small" href="register.jsp">Get Started</a>
+        <a href="test-db">DB Status</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div>
+            <span class="eyebrow">SUSTAINABLE TECHNOLOGY ACADEMY</span>
+            <h1 style="font-size:3rem; line-height:1.15; margin:12px 0 16px;">
+                Master technologies engineering a <span style="color:var(--primary);">greener future</span>.
+            </h1>
+            <p style="font-size:1.1rem; max-width:600px; margin-bottom:28px;">
+                A comprehensive enterprise-grade Java web learning platform featuring role-based dashboards, verified certifications, interactive coursework, and vibrant community forums.
+            </p>
+            <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                <a class="btn" href="courses">Explore All Courses</a>
+                <a class="btn outline" href="register.jsp">Create Free Account</a>
+                <a class="btn secondary" href="login.jsp">Sign In (Demo Logins)</a>
+            </div>
+        </div>
+
+        <!-- Hero Highlights Box -->
+        <div class="card" style="border: 2px solid var(--border); background: rgba(18, 36, 28, 0.9);">
+            <div style="font-size:3.5rem; line-height:1; margin-bottom:12px;">🌿</div>
+            <h3>Certified Green Tech Education</h3>
+            <p>Industry-aligned knowledge tracks for clean energy innovators and sustainability leaders:</p>
+            <div style="display:flex; flex-direction:column; gap:8px; margin-top:14px;">
+                <div style="display:flex; align-items:center; gap:10px; font-size:0.9rem;">
+                    <span style="color:var(--primary);">☀️</span> <strong>Solar Energy & Photovoltaic Engineering</strong>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; font-size:0.9rem;">
+                    <span style="color:var(--primary);">🔄</span> <strong>Circular Economy & Industrial Symbiosis</strong>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; font-size:0.9rem;">
+                    <span style="color:var(--primary);">🏢</span> <strong>Sustainable Architecture & LEED Design</strong>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; font-size:0.9rem;">
+                    <span style="color:var(--primary);">💨</span> <strong>Wind Turbine Aerodynamics & Grid Integration</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Roles Section -->
+    <section class="section">
+        <div style="text-align:center; max-width:700px; margin:0 auto 40px;">
+            <span class="eyebrow">THREE SPECIALIZED WORKSPACES</span>
+            <h2>Built for Admins, Instructors, and Learners</h2>
+            <p>Dedicated role-based experiences tailored to distinct educational objectives.</p>
+        </div>
+
+        <div class="grid three">
+            <!-- Admin Role Card -->
+            <div class="card">
+                <div class="stat-icon" style="background:rgba(239,68,68,0.15); color:#f87171; margin-bottom:14px;">👑</div>
+                <span class="tag role-admin">Administrator</span>
+                <h3 style="margin:10px 0 6px;">System Governance</h3>
+                <p>Complete control over users, course curriculum approval workflows, system configuration settings, and analytical enrollment charts.</p>
+                <div style="margin-top:14px;">
+                    <a class="btn small outline full" href="login.jsp">Admin Portal Demo &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Instructor Role Card -->
+            <div class="card">
+                <div class="stat-icon" style="background:rgba(56,189,248,0.15); color:var(--info); margin-bottom:14px;">🎓</div>
+                <span class="tag role-instructor">Instructor</span>
+                <h3 style="margin:10px 0 6px;">Course Creation & Grading</h3>
+                <p>Design multi-module courses, create practical student assignments, evaluate submissions with numerical scores and written feedback.</p>
+                <div style="margin-top:14px;">
+                    <a class="btn small outline full" href="login.jsp">Instructor Portal Demo &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Learner Role Card -->
+            <div class="card">
+                <div class="stat-icon" style="background:rgba(34,197,94,0.15); color:var(--primary); margin-bottom:14px;">🌱</div>
+                <span class="tag role-learner">Learner</span>
+                <h3 style="margin:10px 0 6px;">Enrollment & Certification</h3>
+                <p>Enroll in approved courses, track module progress up to 100%, submit coursework, participate in forums, and earn verified certificates.</p>
+                <div style="margin-top:14px;">
+                    <a class="btn small full" href="register.jsp">Join as Learner &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 GreenLearn Platform — Comprehensive Green Technology Academic System
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
