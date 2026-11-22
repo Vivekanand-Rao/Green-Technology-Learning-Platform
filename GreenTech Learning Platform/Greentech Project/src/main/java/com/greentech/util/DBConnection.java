@@ -8,8 +8,8 @@ import java.util.Properties;
 
 public final class DBConnection {
     private static String url = "jdbc:mysql://localhost:3306/greentech_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-    private static String user = "root";
-    private static String password = "Vivek007";
+    private static String user = "User";
+    private static String password = "Enter Your SQL Pass";
 
     static {
         try {
